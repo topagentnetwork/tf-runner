@@ -37,4 +37,5 @@ argv.env(config.envPrefix).option('E', {
 .command(require('./lib/destroy'))
 .command(require('./lib/apply'))
 .command(require('./lib/show'))
-.command(require('./lib/output')).argv
+.command(require('./lib/output'))
+.command(require('./lib/validate')).argv
