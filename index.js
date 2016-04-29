@@ -35,4 +35,5 @@ argv.env(config.envPrefix).option('E', {
 .command(require('./lib/bootstrap'))
 .command(require('./lib/plan'))
 .command(require('./lib/destroy'))
-.command(require('./lib/apply')).argv
+.command(require('./lib/apply'))
+.command(require('./lib/show')).argv
