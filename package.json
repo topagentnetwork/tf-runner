@@ -6,6 +6,10 @@
   "scripts": {
     "test": "xo"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:cleanoffer/tf-runner.git"
+  },
   "bin": {
     "tf": "./bin/tf.js"
   },
@@ -19,6 +23,10 @@
     "cli"
   ],
   "author": "Nadeem Bitar",
+  "bugs": {
+    "url": "https://github.com/cleanoffer/tf-runner/issues"
+  },
+  "homepage": "https://github.com/cleanoffer/tf-runner#readme",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.3.5",
