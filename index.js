@@ -28,6 +28,7 @@ argv.env(config.envPrefix).option('E', {
   alias: 'aws-region',
   global: true,
   type: 'string',
+  default: 'us-east-1',
   demand: true,
   description: `AWS region to use for storing terraform's remote state. Overrides ${envPrefix}_AWS_REGION`
 })
