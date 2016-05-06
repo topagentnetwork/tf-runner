@@ -24,6 +24,14 @@ yargs.env(config.envPrefix).option('E', {
   demand: true,
   description: `Name of bucket to store terraform's remote state. Overrides ${envPrefix}_S3_BUCKET`
 })
+.option('D', {
+  alias: 'root',
+  global: true,
+  type: 'string',
+  default: process.cwd(),
+  demand: true,
+  description: `The root directory to run terraform commands in. Overrides ${envPrefix}_ROOT`,
+})
 .option('R', {
   alias: 'aws-region',
   global: true,
