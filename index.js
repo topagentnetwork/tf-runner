@@ -1,9 +1,9 @@
-const argv = require('yargs')
+const yargs = require('yargs')
 const config = require('./lib/config')
 
 const envPrefix = config.envPrefix
 
-argv.env(config.envPrefix).option('E', {
+yargs.env(config.envPrefix).option('E', {
   alias: 'env',
   global: true,
   type: 'string',
@@ -32,6 +32,7 @@ argv.env(config.envPrefix).option('E', {
   demand: true,
   description: `AWS region to use for storing terraform's remote state. Overrides ${envPrefix}_AWS_REGION`
 })
+.wrap(Math.min(120, yargs.terminalWidth()))
 .help()
 .command(require('./lib/bootstrap'))
 .command(require('./lib/plan'))
