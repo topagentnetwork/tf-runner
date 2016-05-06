@@ -24,8 +24,7 @@ yargs.env(config.envPrefix).option('E', {
   demand: true,
   description: `Name of bucket to store terraform's remote state. Overrides ${envPrefix}_S3_BUCKET`
 })
-.option('D', {
-  alias: 'root',
+.option('root', {
   global: true,
   type: 'string',
   default: process.cwd(),
