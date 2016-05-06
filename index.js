@@ -42,6 +42,7 @@ yargs.env(config.envPrefix).option('E', {
 })
 .wrap(Math.min(120, yargs.terminalWidth()))
 .help()
+.version()
 .command(require('./lib/bootstrap'))
 .command(require('./lib/plan'))
 .command(require('./lib/destroy'))
