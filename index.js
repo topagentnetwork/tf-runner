@@ -31,6 +31,14 @@ yargs.env(config.envPrefix).option('E', {
   demand: true,
   description: `The root directory to run terraform commands in. Overrides ${envPrefix}_ROOT`,
 })
+.option('U', {
+  alias: 'update-modules',
+  global: true,
+  type: 'boolean',
+  default: false,
+  demand: false,
+  description: 'Check downloaded modules and update if necessary'
+})
 .option('R', {
   alias: 'aws-region',
   global: true,
