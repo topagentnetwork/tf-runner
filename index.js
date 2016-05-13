@@ -47,6 +47,14 @@ yargs.env(config.envPrefix).option('E', {
   demand: true,
   description: `AWS region to use for storing terraform's remote state. Overrides ${envPrefix}_AWS_REGION`
 })
+.option('Y', {
+  alias: 'assume-yes',
+  global: true,
+  type: 'boolean',
+  default: false,
+  demand: false,
+  description: 'Do not ask for confirmation for any command and assume the answer is always yes'
+})
 .wrap(Math.min(120, yargs.terminalWidth()))
 .help()
 .version()
