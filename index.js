@@ -55,6 +55,12 @@ yargs.env(config.envPrefix).option('E', {
   demand: false,
   description: 'Do not ask for confirmation for any command and assume the answer is always yes'
 })
+.option('verbose', {
+  global: true,
+  type: 'boolean',
+  default: false,
+  description: 'Print out extra information while running'
+})
 .wrap(Math.min(120, yargs.terminalWidth()))
 .help()
 .version()
