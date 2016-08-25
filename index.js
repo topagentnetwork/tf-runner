@@ -66,6 +66,7 @@ yargs.env(config.envPrefix).option('E', {
 .version()
 .command(require('./lib/bootstrap'))
 .command(require('./lib/plan'))
+.command(require('./lib/clean'))
 .command(require('./lib/destroy'))
 .command(require('./lib/apply'))
 .command(require('./lib/show'))
