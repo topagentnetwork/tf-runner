@@ -1,0 +1,12 @@
+machine:
+  node:
+    version: 4.3.2
+dependencies:
+  pre:
+    - cp npmrc.circleci .npmrc
+deployment:
+  release:
+    tag: /v[0-9]+(\.[0-9]+)*/
+    commands:
+      - npm publish --access public
+
