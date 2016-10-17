@@ -44,6 +44,9 @@
   "xo": {
     "esnext": true,
     "space": 2,
-    "semicolon": false
+    "semicolon": false,
+    "rules": {
+      "xo/no-process-exit": 0
+    }
   }
 }
