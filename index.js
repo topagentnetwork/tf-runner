@@ -74,3 +74,4 @@ yargs.env(config.envPrefix)
   .command(require('./lib/show'))
   .command(require('./lib/output'))
   .command(require('./lib/validate'))
+  .argv
