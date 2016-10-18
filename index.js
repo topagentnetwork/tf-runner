@@ -75,3 +75,5 @@ yargs.env(config.envPrefix)
   .command(require('./lib/output'))
   .command(require('./lib/validate'))
   .argv
+
+/* eslint "no-unused-expressions": "off" */
