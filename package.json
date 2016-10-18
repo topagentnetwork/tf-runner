@@ -4,7 +4,9 @@
   "description": "A wrapper to simplify running terraform in multiple environments",
   "main": "index.js",
   "scripts": {
-    "test": "xo"
+    "test": "xo",
+    "preversion": "test",
+    "postversion": "git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
