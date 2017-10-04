@@ -1,6 +1,6 @@
 {
   "name": "@topagentnetwork/tf-runner",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "A wrapper to simplify running terraform in multiple environments",
   "main": "index.js",
   "scripts": {
